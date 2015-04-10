@@ -19,7 +19,7 @@
 
         <activity
             android:name="CadastrarAtividadeActivity"
-            android:label="Cadastro">
+            android:label="Cadastro de Atividade">
 
         </activity>
 
