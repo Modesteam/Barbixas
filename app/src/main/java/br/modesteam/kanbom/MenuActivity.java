@@ -1,9 +1,11 @@
 package br.modesteam.kanbom;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MenuActivity extends ActionBarActivity {
@@ -35,5 +37,12 @@ public class MenuActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    //Método para ir para a tela da calculadora
+    public void showCadastrar(View view) {
+        Intent intent = new Intent();
+        intent.setClass(this, CadastrarAtividadeActivity.class);
+        startActivity(intent);
     }
 }
