@@ -84,7 +84,8 @@
         android:id="@+id/btCadastrar"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
+        android:layout_alignEnd="@+id/textView3"
+        android:onClick="cadastraAtividade"/>
 
     <RadioGroup
         android:layout_width="fill_parent"
@@ -92,8 +93,8 @@
         android:id="@+id/rgStatus"
         android:orientation="vertical"
         android:layout_alignTop="@+id/textView6"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignLeft="@+id/txDataFinal"
+        android:layout_alignStart="@+id/txDataFinal"
         android:layout_above="@+id/btCadastrar"
         android:layout_alignRight="@+id/btCadastrar"
         android:layout_alignEnd="@+id/btCadastrar">
@@ -133,7 +134,7 @@
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/txDataFinal"
         android:layout_alignTop="@+id/textView5"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2" />

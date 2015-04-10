@@ -9,11 +9,13 @@ public class Atividade {
     private String nome;
     private String descricao;
     private String status;
-    private Date dataRegistro;
-    private Date dataFinal;
+    private String dataFinal;
 
-    public Atividade() {
-
+    public Atividade(String nome, String descricao, String status, String dataFinal) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.status = status;
+        this.dataFinal = dataFinal;
     }
 
     public String getNome() {
@@ -40,19 +42,11 @@ public class Atividade {
         this.status = status;
     }
 
-    public Date getDataRegistro() {
-        return dataRegistro;
-    }
-
-    public void setDataRegistro(Date dataRegistro) {
-        this.dataRegistro = dataRegistro;
-    }
-
-    public Date getDataFinal() {
+    public String getDataFinal() {
         return dataFinal;
     }
 
-    public void setDataFinal(Date dataFinal) {
+    public void setDataFinal(String dataFinal) {
         this.dataFinal = dataFinal;
     }
 }

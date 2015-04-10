@@ -39,7 +39,6 @@ public class MenuActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //Método para ir para a tela da calculadora
     public void showCadastrar(View view) {
         Intent intent = new Intent();
         intent.setClass(this, CadastrarAtividadeActivity.class);
