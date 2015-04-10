@@ -20,9 +20,10 @@
         <activity
             android:name="CadastrarAtividadeActivity"
             android:label="Cadastro de Atividade">
-
         </activity>
-
+        <activity android:name=".ConfirmarAtividadeActivity"
+            android:label="Confirmação de cadastro">
+            </activity>
     </application>
 
 </manifest>

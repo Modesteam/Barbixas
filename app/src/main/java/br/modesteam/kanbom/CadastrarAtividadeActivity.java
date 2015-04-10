@@ -40,10 +40,11 @@ public class CadastrarAtividadeActivity extends ActionBarActivity {
 
     public void cadastraAtividade()
     {
-        String nome, descricao, datafinal, status;
+        String nome, descricao, dataFinal, status = "ToDo";
+
         nome = txNome.getText().toString();
         descricao = txDescricao.getText().toString();
-        datafinal = txDatafinal.getText().toString();
+        dataFinal = txDatafinal.getText().toString();
         if(rbToDo.isChecked())
             status = "ToDo";
         if(rbDoing.isChecked())
@@ -52,10 +53,13 @@ public class CadastrarAtividadeActivity extends ActionBarActivity {
             status = "Done";
 
 
-        Intent intent = new Intent();
-        intent.setClass(this, ConfirmarAtividadeActivity.class);
-        intent.putExtra("nome", txNome.getText().toString());
-        startActivity(intent);
+        Intent intent = new Intent(this, ConfirmarAtividadeActivity.class);
+        //intent.setClass(this, ConfirmarAtividadeActivity.class);
+        intent.putExtra("nome", nome);
+        intent.putExtra("descricao", descricao);
+        intent.putExtra("dataFinal", dataFinal);
+        intent.putExtra("status", status);
+        //startActivity(intent);
 
 
 

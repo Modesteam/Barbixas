@@ -12,12 +12,20 @@ import java.util.ArrayList;
  */
 public class ConfirmarAtividadeActivity  extends ActionBarActivity {
 
+    EditText teste;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Bundle extra = getIntent().getExtras();
-        String nome = extra.getString("nome");
+        Bundle extras = getIntent().getExtras();
         setContentView(R.layout.activity_confirmaratividade);
+
+        String nome = extras.getString("nome");
+        String descricao = extras.getString("descricao");
+        String dataFinal = extras.getString("dataFinal");
+        String status = extras.getString("status");
+        teste = (EditText) findViewById(R.id.id);
+        teste.setText("OIIIIIIII" + nome);
+
     }
 
     public void cadastraAtividade()
